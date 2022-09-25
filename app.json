@@ -17,8 +17,8 @@
       "Redirect Bot",
       "Tovino Bot"
     ],
-    "website": "https://github.com/DKBOTx/TovinoBotV3",
-    "repository": "https://github.com/DKBOTx/TovinoBotV3",
+    "website": "https://github.com/DeepSandhra/TovinoBotV3",
+    "repository": "https://github.com/DeepSandhra/TovinoBotV3",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
