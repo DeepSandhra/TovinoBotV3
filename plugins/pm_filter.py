@@ -497,17 +497,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('Aᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('𝙼𝙾𝚅𝙸𝙴𝚂 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝙾𝚃 🎬', url='https://t.me/MovieRequestGroup_rebot')
-            ],[
-            InlineKeyboardButton('♥Mʏ ɢʀᴏᴜᴘ♥', url='https://t.me/Movies_hunt_2022')
-            ],[
-            InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ 📥', url='https://t.me/Movies_DATABASE_2022'),
-            ],[
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-            ],[
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
+     [
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
+        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
@@ -573,17 +566,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about_menu":
         buttons = [[
-            InlineKeyboardButton('Aᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('𝙼𝙾𝚅𝙸𝙴𝚂 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝙾𝚃 🎬', url='https://t.me/MovieRequestGroup_rebot')
-            ],[
-            InlineKeyboardButton('♥Mʏ ɢʀᴏᴜᴘ♥', url='https://t.me/Movies_hunt_2022')
-            ],[
-            InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ 📥', url='https://t.me/Movies_DATABASE_2022'),
-            ],[
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-            ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
+        InlineKeyboardButton('Mʏ ɢʀᴏᴜᴘ', url='https://t.me/Movies_hunt_2022'),
+        InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Movies_DATABASE_2022'),
+        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
